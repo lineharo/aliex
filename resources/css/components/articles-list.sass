@@ -1,0 +1,57 @@
+.articles-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 60px 20px
+
+.articles-list__item
+    max-width: 300px
+    border-radius: 20px
+    transition: box-shadow 0.3s
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &:hover
+        box-shadow: 0 0 8px 0 rgba(#999, 20%)
+        .articles-list__image,
+        .articles-list__info
+            border-color: $color-hi-border
+
+        .articles-list__image
+            a
+                img
+                    transform: scale(105%)
+
+.articles-list__image
+    width: 300px
+    height: 300px
+    border: 1px solid $color-border
+    border-bottom: none
+    border-radius: 20px 20px 0 0
+    transition: border-color 0.3s
+    position: relative
+    overflow: hidden
+    a
+        img
+            transition: transform 0.3s
+
+.articles-list__info
+    position: relative
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    padding: 20px 20px
+    border: 1px solid $color-border
+    border-top: none
+    border-radius: 0 0 20px 20px
+    transition: border-color 0.3s
+    flex-grow: 1
+
+.articles-list__date
+    font-size: 0.8rem
+    color: $color-text-6
+
+.articles-list__title
+    font-size: 1.2rem
+    font-weight: bold

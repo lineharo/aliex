@@ -1,0 +1,28 @@
+.search-results
+    //
+
+.search-results__item
+    display: flex
+    justify-content: space-between
+    gap: 20px
+    align-items: center
+    margin-bottom: 20px
+    &:not(:last-child)
+        border-bottom: 1px solid $color-border
+
+.search-results__img
+    width: 250px
+    height: 250px
+    flex-shrink: 0
+
+.search-results__item-info
+    flex-grow: 1
+
+.search-results__name
+    font-size: 22px
+    font-weight: bold
+    margin-bottom: 15px
+    line-height: 1.1
+    a
+        text-decoration: none
+        color: $color-text

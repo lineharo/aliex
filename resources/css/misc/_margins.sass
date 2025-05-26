@@ -1,0 +1,41 @@
+.margins
+    max-width: $page-width
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+    @media all and (max-width: $page-width)
+        padding: 0 10px
+
+$n: -5
+@while $n < 100
+    $n: $n + 5
+
+    .mt-#{math.div($n, 5)}
+        margin-top: #{$n}px !important
+
+    .mb-#{math.div($n, 5)}
+        margin-bottom: #{$n}px !important
+
+    .ml-#{math.div($n, 5)}
+        margin-left: #{$n}px !important
+
+    .mr-#{math.div($n, 5)}
+        margin-right: #{$n}px !important
+
+    .my-#{math.div($n, 5)}
+        margin-top: #{$n}px !important
+        margin-bottom: #{$n}px !important
+
+    .mx-#{math.div($n, 5)}
+        margin-left: #{$n}px !important
+        margin-right: #{$n}px !important
+
+    .m-#{math.div($n, 5)}
+        margin-top: #{$n}px !important
+        margin-bottom: #{$n}px !important
+        margin-left: #{$n}px !important
+        margin-right: #{$n}px !important
+
+.mx-auto
+    margin-left: auto
+    margin-right: auto

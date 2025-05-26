@@ -1,0 +1,157 @@
+.product
+    width: 100%
+
+.product__name
+    word-wrap: break-word
+    line-height: 1
+
+.product__common
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    gap: 50px
+    @media screen and (max-width: 870px)
+        justify-content: center
+
+.product__gallery
+    //
+
+.product__slider-wrap
+    width: 400px
+    max-height: 400px
+    overflow: hidden
+    border-radius: 50px
+
+.product__slider
+    width: 400px
+    height: 400px
+    display: flex
+    transition: transform 0.8s
+
+.product__slide
+    display: block
+    position: relative
+    width: 400px
+    height: 400px
+    &:not(:first-child)
+        display: none
+    img
+        max-width: 400px
+        max-height: 400px
+        width: 100%
+        height: 100%
+
+.product__slide-more
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100%
+    background-color: #e5e5e5
+
+.product__slide-overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#323A89, 8%)
+
+.product__gallery-controls
+    display: none
+    //display: flex
+    justify-content: space-between
+    width: 300px
+    margin: 0 auto
+
+.product__gallery-control
+    display: flex
+    background-color: #f9f5f5
+    flex-grow: 1
+    justify-content: center
+    cursor: pointer
+    transition: background-color 0.3s
+    border-radius: 0 0 15px 15px
+    &:hover
+        background-color: darken(#f9f5f5, 3%)
+    svg
+        width: 50px
+
+.product__info
+    flex-basis: 400px
+    flex-grow: 1
+    @media screen and (max-width: 870px)
+        max-width: 500px
+
+
+
+.product__rating
+    display: flex
+    gap: 10px
+    align-items: center
+    font-size: 22px
+    margin: 15px 0
+
+.product__caution
+    font-size: 20px
+
+.product__price
+    display: flex
+    gap: 20px
+    align-items: center
+    margin: 50px 0
+
+.product__price-final
+    font-size: 36px
+    font-weight: bold
+
+.product__price-full
+    color: #ACACAC
+    text-decoration: line-through
+
+.product__price-discount
+    color: $color-accent
+    font-weight: bold
+
+.product__date
+    font-size: 18px
+    margin-bottom: 15px
+    color: #ACACAC
+
+.product__description
+    width: 100%
+
+.product__reviews
+    //
+
+.product__review
+    margin: 20px 0
+
+.product__review-name
+    font-size: 18px
+    font-weight: bold
+
+.product__review-text
+    font-size: 18px
+
+
+.product__store
+    //
+
+.product-store__top
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    gap: 15px
+
+.product__store-image
+    width: 70px
+    height: 70px
+    img
+        max-width: 100%
+        max-height: 100%
+
+.product__store-name
+    font-size: 22px
+    word-wrap: break-word
+    max-width: 400px

@@ -1,0 +1,29 @@
+$n: -25
+@while $n < 600
+    $n: $n + 25
+
+    .pt-#{math.div($n, 25)}
+        padding-top: #{math.div($n, 100)}rem !important
+
+    .pb-#{math.div($n, 25)}
+        padding-bottom: #{math.div($n, 100)}rem !important
+
+    .pl-#{math.div($n, 25)}
+        padding-left: #{math.div($n, 100)}rem !important
+
+    .pr-#{math.div($n, 25)}
+        padding-right: #{math.div($n, 100)}rem !important
+
+    .py-#{math.div($n, 25)}
+        padding-top: #{math.div($n, 100)}rem !important
+        padding-bottom: #{math.div($n, 100)}rem !important
+
+    .px-#{math.div($n, 25)}
+        padding-left: #{math.div($n, 100)}rem !important
+        padding-right: #{math.div($n, 100)}rem !important
+
+    .p-#{math.div($n, 25)}
+        padding-top: #{math.div($n, 100)}rem !important
+        padding-bottom: #{math.div($n, 100)}rem !important
+        padding-left: #{math.div($n, 100)}rem !important
+        padding-right: #{math.div($n, 100)}rem !important

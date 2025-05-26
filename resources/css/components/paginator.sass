@@ -1,0 +1,43 @@
+.paginator
+    display: flex
+    justify-content: center
+    margin: 15px 0
+
+.paginator__first,
+.paginator__before,
+.paginator__current,
+.paginator__after,
+.paginator__last
+    display: block
+    padding: 4px 12px
+    text-decoration: none
+    margin: 0 3px
+    min-width: 13px
+    color: $color-invert-text
+    background-color: $color-accent
+    text-align: center
+    border-radius: 4px
+    transition: background-color 0.3s
+    &:hover
+        background-color: lighten($color-accent, 15%)
+
+.paginator__current
+    border: 1px solid $color-accent
+    background-color: $color-bg
+    color: $color-accent
+    cursor: default
+    &:hover
+        background-color: darken($color-bg, 10%)
+
+.paginator__separator
+    position: relative
+    width: 20px
+    margin: 0 10px
+    &::after
+        position: absolute
+        top: 50%
+        left: 0
+        content: ""
+        height: 1px
+        width: 100%
+        background-color: $color-accent

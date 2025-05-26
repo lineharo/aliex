@@ -1,0 +1,92 @@
+.promocodes
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+.promocodes__item
+    padding: 10px
+    display: flex
+    width: 100%
+    gap: 30px
+    border: 1px solid $color-border
+    border-radius: 20px
+    transition: border-color 0.3s
+    &:hover
+        border-color: $color-hi-border
+    @media screen and (max-width: 650px)
+        flex-direction: column
+        gap: 10px
+
+.promocodes__item-value
+    background-color: #ffde9e
+    padding: 20px
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    flex-basis: 160px
+    flex-shrink: 0
+    @media screen and (max-width: 650px)
+        padding: 5px
+        flex-basis: auto
+
+.promocodes__item-value-caption
+    font-size: 14px
+
+.promocodes__item-value-digit
+    font-size: 22px
+    font-weight: bold
+
+.promocodes__item-info
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 5px 0
+    @media screen and (max-width: 650px)
+        margin: 40px 0
+
+.promocodes__item-name
+    font-size: 20px
+    @media screen and (max-width: 650px)
+        text-align: center
+
+.promocodes__item-dates
+    @media screen and (max-width: 650px)
+        text-align: center
+        margin-top: 30px
+
+.promocodes__item-action
+    flex-basis: 220px
+    flex-shrink: 0
+    display: flex
+    align-items: center
+    @media screen and (max-width: 650px)
+        flex-basis: auto
+
+.promocode__open-code
+    //display: none
+
+.promocodes__code
+    display: none
+    width: 100%
+
+.promocodes__code-value
+    position: relative
+    text-align: center
+    border: 1px solid $color-border
+    border-radius: 3px
+    font-size: 16px
+    font-weight: bold
+    padding: 10px 25px 10px 10px
+    width: 100%
+    margin-block: 15px
+    cursor: pointer
+
+.promocodes__code-copy
+    position: absolute
+    right: 10px
+    top: 12px
+    svg
+        width: 20px

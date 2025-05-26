@@ -1,0 +1,49 @@
+.page-header
+    width: 100%
+    @media all and (max-width: $page-width)
+        padding: 0 20px
+
+.page-header__inner
+    width: 100%
+    max-width: $page-width
+    margin: 0 auto
+    padding: 20px 0
+    display: flex
+    gap: 25px
+    justify-content: space-between
+    align-items: center
+    @media screen and (max-width: 760px)
+        justify-content: center
+    @media screen and (max-width: 650px)
+        flex-direction: column
+
+.page-header__logo
+    width: 120px
+    display: flex
+    align-items: center
+    a
+        display: block
+        width: 100%
+        height: 100%
+
+.page-header__nav
+    flex-grow: 1
+
+.page-header__nav-item
+    display: inline-block
+    font-size: 20px
+    border-radius: 20px
+    padding: 6px 20px
+    transition: background-color 0.3s, color 0.3s
+    &:hover
+        text-decoration: underline
+
+
+.page-header__socials
+    flex-shrink: 1
+    display: flex
+    //flex-direction: column
+    gap: 5px
+    flex-wrap: wrap
+    @media screen and (max-width: 760px)
+        justify-content: center

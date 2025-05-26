@@ -1,0 +1,28 @@
+.soc-button
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    gap: 15px
+    color: #6C6C6C
+    background-color: #EFF0F6
+    border-radius: 20px
+    padding: 12px 20px
+    transition: background-color 0.3s, color 0.3s
+    &:hover
+        background-color: darken(#EFF0F6, 5%)
+        color: #333
+
+        .soc-button__icon svg path
+            fill: #333
+
+.soc-button__caption
+    font-size: 16px
+
+.soc-button__icon
+    width: 40px
+    text-align: center
+    svg
+        height: 22px
+
+.soc-button__icon svg path
+    transition: fill 0.3s
