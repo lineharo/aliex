@@ -125,7 +125,7 @@ class VK
             $text .= '🔹Продаж: ' . $product->sales . PHP_EOL . PHP_EOL ;
         }
 
-        $text .= '➡️ Подробнее: ' . route('front.product.show', ['slug' => $product->slug]);
+        $text .= '➡️ Подробнее: ' . route('front.product.show', ['slug' => $product->slug]) . PHP_EOL . PHP_EOL;
 
         // Удаляем HTML теги и обрезаем текст
         $cleanText = strip_tags($product->description);

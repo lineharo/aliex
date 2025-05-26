@@ -10,7 +10,7 @@
 
     <div class='px-4'>
         <a href="{{ route('front.away.redirect', ['productAId' => $productAId])}}" class="away__link button button_big" rel="nofollow" onclick="ym(95477317,'reachGoal','away_to_ali')" target="_blank">Купить в Aliexpress</a>
-        <div class="note text-align_right">erid=LatgBbQo6</div>
+        <div class="note text-align_right">erid=2bL9aMPo2e49hMef4pdzo6JkYp</div>
     </div>
 
     <div class="note away__note text-align_center">или это произойдёт автоматически через 6&nbsp;секунд</div>

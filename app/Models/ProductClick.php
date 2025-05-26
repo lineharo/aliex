@@ -12,7 +12,7 @@ class ProductClick extends Model
 
     public $timestamps = false;
 
-    const AFF_LINK = 'https://dhwnh.com/g/vv3q4oey1v3bdea9edefb6d1781017/?erid=LatgBbQo6';
+    const AFF_LINK = 'https://dhwnh.com/g/vv3q4oey1vd18fa14721b6d1781017/?erid=2bL9aMPo2e49hMef4pdzo6JkYp';
 
     public function __construct()
     {
