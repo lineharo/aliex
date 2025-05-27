@@ -9,7 +9,6 @@
         </div>
 
         <div class="article__content">
-            {!! $article->content !!}
             {!! Blade::render($article->content) !!}
         </div>
 

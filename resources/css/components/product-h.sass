@@ -1,0 +1,145 @@
+.product-h
+    display: flex
+    flex-direction: row
+    gap: 24px
+    border-radius: 20px
+    overflow: hidden
+    background: #fff
+    box-shadow: 0 0 4px 0 rgba(100, 100, 100, 0.07)
+    transition: box-shadow 0.3s
+    align-items: stretch
+    min-height: 250px
+    margin: 0 auto 30px auto
+    border: 1px solid $color-border
+    &:hover
+        box-shadow: 0 0 12px 0 rgba(#999, 20%)
+        border-color: $color-hi-border
+        .product-h__image a img
+            transform: scale(105%)
+
+.product-h__image
+    width: 250px
+    min-width: 250px
+    height: 250px
+    border: 1px solid $color-border
+    border-radius: 20px 0 0 20px
+    background: #f7f7f7
+    overflow: hidden
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: border-color 0.3s
+
+    .product-h__image-slider
+        width: 100%
+        height: 100%
+        position: relative
+
+    .product-h__image-slide
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        top: 0
+        transition: opacity 0.2s, transform 0.3s
+        opacity: 1
+        img
+            width: 100%
+            height: 100%
+            object-fit: contain
+            transition: transform 0.3s
+
+    .product-h__image-overlay
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(#323A89, 8%)
+
+.product-h__info
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    flex: 1
+    border: 1px solid $color-border
+    border-left: none
+    border-radius: 0 20px 20px 0
+    padding: 20px 24px
+    background: #fff
+    transition: border-color 0.3s
+    min-width: 0 // flex-basis bugfix
+
+.product-h__store-name
+    font-size: 14px
+    color: #7D7D7D
+    margin-bottom: 6px
+    word-wrap: break-word
+
+.product-h__name
+    font-size: 16px
+    color: $color-text
+    margin-bottom: 16px
+    font-weight: 600
+    a
+        color: $color-text
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+
+.product-h__popularity
+    display: flex
+    gap: 20px
+    align-items: center
+    margin-bottom: 12px
+
+.product-h__rating
+    display: flex
+    align-items: center
+    font-size: 14px
+    gap: 8px
+
+.product-h__sales
+    font-size: 14px
+    color: #9d9d9d
+
+.product-h__price
+    display: flex
+    align-items: flex-end
+    gap: 12px
+    margin-bottom: 16px
+
+.product-h__price-final
+    color: $color-accent
+    font-size: 22px
+    font-weight: bold
+
+.product-h__price-full
+    color: #ACACAC
+    font-size: 15px
+    text-decoration: line-through
+
+.product-h__price-discount
+    color: $color-accent
+    font-size: 15px
+    font-weight: bold
+    background-color: $color-bg-invert
+    color: $color-text-invert
+    border-radius: 20px 0 0 20px
+    padding: 2px 7px
+
+.product-h__button
+    margin-top: auto
+    a.button
+        display: inline-block
+        font-size: 15px
+        padding: 8px 24px
+        border-radius: 14px
+        background: $color-accent
+        color: #fff
+        text-decoration: none
+        font-weight: 600
+        transition: background 0.2s
+        &:hover
+            background: darken($color-accent, 7%)
