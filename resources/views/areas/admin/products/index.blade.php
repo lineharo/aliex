@@ -40,7 +40,7 @@
                     </td>
                     <td class="px-6 py-4">
                         <div class="mb-1 text-xs text-slate-400">
-                            {{ $product->created_at }} — {{ $product->ulid }}
+                            {{ $product->created_at }} — {{ $product->ulid }} — <a style="color: #f87" target="_blank" href="{{ route('front.product.show', ['slug' => $product->slug]) }}">На сайте</a> — <a style="color: #f87" target="_blank" href="https://aliexpress.ru/item/{{ $product->ali_id }}.html">На али</a>
                         </div>
                         {{ $product->name }}</a>
                         <div class="mt-4 text-xs" style="max-height: 200px; overflow-y: scroll">
