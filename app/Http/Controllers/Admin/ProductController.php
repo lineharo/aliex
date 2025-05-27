@@ -13,9 +13,16 @@ use Intervention\Image\Facades\Image;
 
 class ProductController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $products = Product::orderBy('updated_at', 'desc')->paginate(12);
+        $query = Product::orderBy('updated_at', 'desc');
+
+        if ($request->filled('q')) {
+            $query->where('name', 'like', '%' . $request->q . '%');
+        }
+
+        $products = $query->paginate(12);
+
         return view('areas.admin.products.index', [
             'products' => $products,
         ]);
