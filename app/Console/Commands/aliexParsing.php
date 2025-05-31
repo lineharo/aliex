@@ -256,7 +256,7 @@ class aliexParsing extends Command
 
         $text = $product->name . PHP_EOL . PHP_EOL;
         $text .= '➡️ Подробнее:' . PHP_EOL;
-        $text .= route('front.product.show', ['slug' => $product->slug]) . PHP_EOL . PHP_EOL;
+        $text .= '<a href="' . route('front.product.show', ['slug' => $product->slug]) . '">ALI-EX.RU</a>' . PHP_EOL . PHP_EOL;
         $text .= '🏷️ Цена: ' . round($product->price / 100) . ' ₽' . PHP_EOL;
         $text .= '🔹 Старая цена: <s>' . round($product->price_old / 100) . ' ₽' . '</s>' . PHP_EOL . PHP_EOL;
 
