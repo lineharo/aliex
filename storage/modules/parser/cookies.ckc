@@ -40,7 +40,7 @@
     },
     {
         "domain": ".aliexpress.ru",
-        "expirationDate": 1782829737.959323,
+        "expirationDate": 1783259334.436136,
         "hostOnly": false,
         "httpOnly": false,
         "name": "aer_abid",
@@ -78,19 +78,6 @@
     },
     {
         "domain": ".aliexpress.ru",
-        "expirationDate": 1782829737.958489,
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "xman_us_f",
-        "path": "/",
-        "sameSite": "no_restriction",
-        "secure": true,
-        "session": false,
-        "storeId": "0",
-        "value": "x_locale=en_US&x_l=0&x_c_chg=1&x_c_synced=1&acs_rt=c361d6c6b268490e8b4dd98d0302e5f1"
-    },
-    {
-        "domain": ".aliexpress.ru",
         "expirationDate": 1779805697.984603,
         "hostOnly": false,
         "httpOnly": false,
@@ -116,8 +103,34 @@
         "value": "ru_RU"
     },
     {
+        "domain": "aliexpress.ru",
+        "expirationDate": 1782832620.317279,
+        "hostOnly": true,
+        "httpOnly": false,
+        "name": "ae_ru_pp_v",
+        "path": "/",
+        "sameSite": "unspecified",
+        "secure": false,
+        "session": false,
+        "storeId": "0",
+        "value": "1.0.2"
+    },
+    {
         "domain": ".aliexpress.ru",
-        "expirationDate": 1782829737.959221,
+        "expirationDate": 1783259334.435794,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "xman_us_f",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": "0",
+        "value": "x_locale=ru_RU&x_l=0&x_c_chg=1&x_c_synced=1&acs_rt=c361d6c6b268490e8b4dd98d0302e5f1"
+    },
+    {
+        "domain": ".aliexpress.ru",
+        "expirationDate": 1783259334.436091,
         "hostOnly": false,
         "httpOnly": false,
         "name": "aep_usuc_f",
@@ -138,7 +151,7 @@
         "secure": true,
         "session": true,
         "storeId": "0",
-        "value": "%7B%22name%22%3A%22homepage%22%2C%22id%22%3A%2216f27b45-b28e-406c-b81c-1266d4ef8d4b%22%2C%22chinaName%22%3A%22home%22%2C%22referralUrl%22%3A%22https%3A%2F%2Faliexpress.ru%2Fitem%2F1005008824512858.html%22%7D"
+        "value": "%7B%22name%22%3A%22homepage%22%2C%22id%22%3A%2276f5f112-9ecf-4b66-ad56-5c7869533e6b%22%2C%22chinaName%22%3A%22home%22%2C%22referralUrl%22%3A%22https%3A%2F%2Faliexpress.ru%2Fitem%2F1005008928490341.html%22%7D"
     },
     {
         "domain": ".aliexpress.ru",
@@ -150,24 +163,11 @@
         "secure": true,
         "session": true,
         "storeId": "0",
-        "value": "%7B%22name%22%3A%22pdp%22%2C%22id%22%3A%223c12b2d1-9540-45e9-b18c-aea6af196afe%22%2C%22chinaName%22%3A%22detail%22%2C%22referralUrl%22%3A%22https%3A%2F%2Faliexpress.ru%2Fitem%2F1005008824512858.html%22%7D"
+        "value": "%7B%22name%22%3A%22pdp%22%2C%22id%22%3A%2218ea643d-3e1c-41bf-85de-020baf13e2cf%22%2C%22chinaName%22%3A%22detail%22%2C%22referralUrl%22%3A%22https%3A%2F%2Faliexpress.ru%2Fitem%2F1005008928490341.html%22%7D"
     },
     {
         "domain": ".aliexpress.ru",
-        "expirationDate": 1763821731,
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "isg",
-        "path": "/",
-        "sameSite": "no_restriction",
-        "secure": true,
-        "session": false,
-        "storeId": "0",
-        "value": "BLu7QO0GV_bD_WtxtYZotL1gSpYlEM8SH0wj1a143rrRDNvuNeXjYtlGJrRCDCcK"
-    },
-    {
-        "domain": ".aliexpress.ru",
-        "expirationDate": 1782829737.958809,
+        "expirationDate": 1783259334.435918,
         "hostOnly": false,
         "httpOnly": true,
         "name": "intl_common_forever",
@@ -176,11 +176,11 @@
         "secure": true,
         "session": false,
         "storeId": "0",
-        "value": "y3VaSFVeKEFN9f+js4mpuPnBQIt1D0P7Vg0DMVdaKooD8Y8+fSb72g=="
+        "value": "ztCWQ3VCQbRGBNChsfOszoT6K0j6CgxhGRLX8lebOXnlq84JBaxtcg=="
     },
     {
         "domain": ".aliexpress.ru",
-        "expirationDate": 1782829737.958957,
+        "expirationDate": 1783259334.435975,
         "hostOnly": false,
         "httpOnly": false,
         "name": "ali_apache_id",
@@ -189,11 +189,11 @@
         "secure": true,
         "session": false,
         "storeId": "0",
-        "value": "33.22.81.127.1748269737129.665044.2"
+        "value": "33.22.87.193.1748699333793.636030.8"
     },
     {
         "domain": ".aliexpress.ru",
-        "expirationDate": 1782829737.959071,
+        "expirationDate": 1783259334.436032,
         "hostOnly": false,
         "httpOnly": true,
         "name": "JSESSIONID",
@@ -202,6 +202,19 @@
         "secure": true,
         "session": false,
         "storeId": "0",
-        "value": "626E48692A8E9041B53671488DC4C4DE"
+        "value": "1C96B2D16B1DBF4FCAA702699968340C"
+    },
+    {
+        "domain": ".aliexpress.ru",
+        "expirationDate": 1764251331,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "isg",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": "0",
+        "value": "BEBAMMj-PDh-WsAAQu9TleJ5EccSySSTEMXIhLrRHNvuNeBfYt8oIxYPSYX1pdxr"
     }
 ]

@@ -13,7 +13,7 @@
     </nav>
 
     <div class="page-header__socials">
-        <a href="https://t.me/aliexweb" class="soc-button" target="_blank" rel="nofollow">
+        <a href="https://t.me/aliexweb" class="soc-button" target="_blank" rel="nofollow" aria-label="Наш Telegram канал">
             <div class="soc-button__caption">
                 Мы в телеграм
             </div>
@@ -22,7 +22,7 @@
             </div>
         </a>
 
-        <a href="https://vk.com/ali_ex_ru" class="soc-button" target="_blank" rel="nofollow">
+        <a href="https://vk.com/ali_ex_ru" class="soc-button" target="_blank" rel="nofollow" aria-label="Наш ВК паблик">
             <div class="soc-button__caption">
                 Мы в ВК
             </div>
