@@ -8,20 +8,22 @@ trait UrlMapTrait
     public static function getUrlMap()
     {
         $className = strtolower((new \ReflectionClass(static::class))->getShortName());
-
-        $elements = (new static)::where('published', 1)
-            ->orderByDesc('updated_at')
-            ->get();
-
         $urlMap = [];
 
-        foreach ($elements as $element) {
-            $urlMap[] = [
-                'loc' => route("front.$className.show", ['slug' => $element->slug]),
-                'lastmod' => optional($element->updated_at)->toAtomString(), // RFC 3339 формат
-            ];
-        }
+
+        (new static)::select('slug', 'updated_at')
+            ->where('published', 1)
+            ->orderByDesc('updated_at')
+            ->chunk(100, function ($elements) use (&$urlMap, $className) {
+                foreach ($elements as $element) {
+                    $urlMap[] = [
+                        'loc' => route("front.$className.show", ['slug' => $element->slug]),
+                        'lastmod' => optional($element->updated_at)->toAtomString(),
+                    ];
+                }
+            });
 
         return $urlMap;
     }
+
 }
