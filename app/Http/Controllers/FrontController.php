@@ -83,7 +83,9 @@ class FrontController extends Controller
     }
 
     public function sitemap() {
-        \Debugbar::disable();
+        if (class_exists(\Debugbar::class)) {
+            \Debugbar::disable();
+        }
 
         $urls = [
             [

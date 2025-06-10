@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FrontController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,6 @@ require __DIR__.'/front.php';
 require __DIR__.'/admin.php';
 
 require __DIR__.'/auth.php';
+
+
+Route::get ('/sitemap.xml', [FrontController::class, 'sitemap'])->name('sitemap');

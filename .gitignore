@@ -15,7 +15,6 @@
 /public/build
 /public/hot
 /public/storage
-/public/yandex*.html
 /storage/*.key
 /storage/pail
 /vendor
