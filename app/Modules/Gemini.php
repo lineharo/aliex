@@ -13,7 +13,7 @@ class Gemini
 
     public function makeDescription($prompt)
     {
-        $url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' . self::API_KEY;
+        $url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' . self::API_KEY;
 
         try {
             $response = Http::withHeaders([
@@ -61,7 +61,7 @@ SYS
                     'stopSequences' => '[]',
                     'temperature' => 1.2,
                     'maxOutputTokens' => rand(1200, 2500),
-                    'topP' => 0.9,
+                    'topP' => 1.2,
                     'topK' => 5,
                 ],
             ]);
@@ -80,7 +80,7 @@ SYS
 
     public function makeTitle($prompt)
     {
-        $url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' . self::API_KEY;
+        $url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' . self::API_KEY;
 
         try {
             $response = Http::withHeaders([
@@ -106,7 +106,7 @@ SYS
                 ],
                 'generationConfig'=> [
                     'stopSequences' => '["###"]',
-                    'temperature' => 0.7,
+                    'temperature' => 0.9,
                     'maxOutputTokens' => 1000,
                     'topP' => 1,
                     'topK' => 25,
