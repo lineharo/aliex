@@ -13,6 +13,7 @@ class Gemini
 
     public function makeDescription($prompt)
     {
+
         $url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' . self::API_KEY;
 
         try {
@@ -61,7 +62,7 @@ SYS
                     'stopSequences' => '[]',
                     'temperature' => 1.2,
                     'maxOutputTokens' => rand(1200, 2500),
-                    'topP' => 1.2,
+                    'topP' => 1,
                     'topK' => 5,
                 ],
             ]);
